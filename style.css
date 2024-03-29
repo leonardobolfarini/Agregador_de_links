@@ -45,6 +45,8 @@ body * {
 
 #switch {
   position: relative;
+  width: 64px;
+  margin: 4px auto;
 }
 
 #switch button {
@@ -57,6 +59,11 @@ body * {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
+
+  animation: slide_back 0.2s;
+}
+.light #switch button {
+  animation: slide_in 0.2s forwards;
 }
 
 #switch button:hover {
@@ -136,5 +143,23 @@ footer {
   }
   .light {
     --bg-var: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+@keyframes slide_in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide_back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
