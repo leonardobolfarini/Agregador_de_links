@@ -21,6 +21,7 @@
 }
 body {
   background: var(--bg-var) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -127,4 +128,13 @@ ul li a:hover {
 footer {
   text-align: center;
   padding: 24px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-var: url("./assets/bg-desktop.jpg");
+  }
+  .light {
+    --bg-var: url("./assets/bg-desktop-light.jpg");
+  }
 }
