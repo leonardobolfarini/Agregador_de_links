@@ -8,7 +8,7 @@ function toogleMode() {
     img.setAttribute("src", "./assets/avatar-light.png")
     img.setAttribute(
       "alt",
-      "Foto de Leonardo Bolfarini de agasalho, tirada em um espelho de frente."
+      "Foto de Leonardo Bolfarini de agasalho, com uma blusa preta e branca fazendo um beleza com a mão."
     )
   } else {
     img.setAttribute("src", "./assets/avatar.png")
